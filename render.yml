@@ -13,4 +13,4 @@ services:
     name: rasa-actions
     env: docker
     plan: free
-    dockerfilePath: Dockerfile.actions
+    dockerfilePath: actions/Dockerfile
