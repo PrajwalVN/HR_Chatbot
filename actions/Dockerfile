@@ -1,16 +1,14 @@
-FROM rasa/rasa-sdk:3.6.2 
+FROM rasa/rasa-sdk:3.6.2
 
-WORKDIR /app
+WORKDIR /app/actions
 
-COPY ./actions /app/actions
-COPY hr_policy.pdf /app/actions/
-COPY requirements.txt /app/actions/
+COPY actions/ .         # copies action code into /app/actions
+COPY hr_policy.pdf .    # assumes pdf is now inside actions/
+COPY requirements.txt . # assumes it's in actions/
 
 USER root
 
 RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r /app/actions/requirements.txt
-
-EXPOSE 5055  # ✅ Ensure port 5055 is exposed
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["rasa", "run", "actions", "--port", "5055"]
