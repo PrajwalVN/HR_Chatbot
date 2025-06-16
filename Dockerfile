@@ -1,11 +1,11 @@
-FROM python:3.8-slim
+FROM rasa/rasa:3.6.0
 
 WORKDIR /app
-COPY . /app
+COPY . .
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Optional: train if not uploading a trained model
+# RUN rasa train
 
-# Add model training so Rasa is ready to run
-RUN rasa train
+EXPOSE 5005
 
-CMD ["rasa", "run", "--enable-api", "--cors", "*", "--port", "10000"]
+CMD ["run", "--enable-api", "--cors", "*", "--debug"]
