@@ -9,8 +9,7 @@ services:
       - key: RASA_ENV
         value: production
 
-  - type: worker
+  - type: web
     name: rasa-actions
     env: docker
     plan: free
-    dockerfilePath: actions/Dockerfile
