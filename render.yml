@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rasa-backend
+    env: python
+    buildCommand: "rasa train"
+    startCommand: "rasa run --enable-api --cors '*' --port 10000"
+    plan: free
+    envVars:
+      - key: RASA_ENV
+        value: production
+
+  - type: web
+    name: rasa-actions
+    env: python
+    startCommand: "rasa run actions --port 5055"
+    plan: free
+    buildCommand: "pip install -r requirements.txt"

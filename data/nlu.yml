@@ -1,0 +1,11 @@
+version: "3.1"
+
+nlu:
+- intent: ask_hr_policy
+  examples: |
+    - What is the leave policy?
+    - Tell me about holidays
+    - What are the working hours?
+    - Explain the resignation process
+    - Do we have a dress code?
+    - How many casual leaves do we get?

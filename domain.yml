@@ -1,0 +1,15 @@
+version: "3.1"
+
+intents:
+  - ask_hr_policy
+
+actions:
+  - action_search_policy
+
+responses:
+  utter_default:
+    - text: Sorry, I didn't understand that.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

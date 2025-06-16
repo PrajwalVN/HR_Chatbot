@@ -1,0 +1,51 @@
+{
+  "text": {
+    "what": 24,
+    "is": 13,
+    "the": 22,
+    "leave": 14,
+    "policy": 18,
+    "tell": 21,
+    "me": 17,
+    "about": 1,
+    "holidays": 10,
+    "are": 2,
+    "working": 25,
+    "hours": 11,
+    "explain": 7,
+    "resignation": 20,
+    "process": 19,
+    "do": 5,
+    "we": 23,
+    "have": 9,
+    "a": 0,
+    "dress": 6,
+    "code": 4,
+    "how": 12,
+    "many": 16,
+    "casual": 3,
+    "leaves": 15,
+    "get": 8
+  },
+  "intent": {
+    "ask_hr_policy": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 10,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 5,
+    "action_search_policy": 9
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

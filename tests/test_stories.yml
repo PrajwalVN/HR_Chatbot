@@ -1,0 +1,9 @@
+version: "3.1"
+
+test_stories:
+- story: test leave policy question
+  steps:
+    - user: |
+        What is the leave policy?
+      intent: ask_hr_policy
+    - action: action_search_policy

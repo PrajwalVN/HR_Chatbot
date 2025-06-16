@@ -1,0 +1,5 @@
+rasa==3.6.21
+PyMuPDF
+sentence-transformers
+scikit-learn
+requests
