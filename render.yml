@@ -13,3 +13,5 @@ services:
     name: rasa-actions
     env: docker
     plan: free
+    dockerfilePath: ./Dockerfile      # <- this tells Render which Dockerfile to use
+    buildFilterPath: ./actions/       # <- this sets build context to /actions/
