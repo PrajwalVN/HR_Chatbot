@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: rasa-backend
+    name: hr-backend
     env: python
     buildCommand: "rasa train"
     startCommand: "rasa run --enable-api --cors '*' --port 10000"
@@ -10,7 +10,7 @@ services:
         value: production
 
   - type: web
-    name: rasa-actions
+    name: hr-actions
     env: docker
     plan: free
     dockerfilePath: ./Dockerfile    # this is enough
