@@ -2,7 +2,7 @@ services:
   - type: web
     name: hr-backend
     env: python
-    buildCommand: "rasa train"
+    buildCommand: "pip install -r requirements.txt && rasa train"
     startCommand: "rasa run --enable-api --cors '*' --port 10000"
     plan: free
     envVars:
