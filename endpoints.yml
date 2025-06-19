@@ -1,2 +1,2 @@
 action_endpoint:
-  url: "https://rasa-actions.onrender.com/webhook"
+  url: "https://hr-actions.onrender.com/webhook"
