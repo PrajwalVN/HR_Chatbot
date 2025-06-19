@@ -1,4 +1,4 @@
-rasa==3.6.2
+rasa==3.6.21
 PyMuPDF
 sentence-transformers
 scikit-learn
