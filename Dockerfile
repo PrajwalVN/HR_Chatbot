@@ -10,4 +10,4 @@ USER root
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["rasa", "run", "actions", "--port", "5055", "--debug"]
+CMD ["python", "-m", "rasa_sdk", "--port", "5055", "--debug"]
