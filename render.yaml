@@ -8,9 +8,11 @@ services:
     envVars:
       - key: RASA_ENV
         value: production
+    build:
+      pythonVersion: 3.10  
 
   - type: web
     name: hr-actions
     env: docker
     plan: free
-    dockerfilePath: ./Dockerfile    # this is enough
+    dockerfilePath: ./Dockerfile   
