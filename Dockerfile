@@ -10,4 +10,4 @@ USER root
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r /app/actions/requirements.txt
 
-CMD ["start", "--actions", "actions", "--port", "5055", "--debug"]
+CMD ["start", "--actions", "actions", "--port", "5055"]
