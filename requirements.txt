@@ -1,6 +1,6 @@
 rasa==3.6.21
 PyMuPDF
-torch==2.7.1     # 👈 Pin this first
+torch==2.7.1
 sentence-transformers
 scikit-learn
 requests
